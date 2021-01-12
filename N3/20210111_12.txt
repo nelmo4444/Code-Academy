@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int vdigniBitNaPoziciqDelqshtaSe3(int n) {
+    return (n | 0x49249248);
+}
+  
+int main() {
+   int n = 6;
+   printf("%d\n", vdigniBitNaPoziciqDelqshtaSe3(n));
+   return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h> 
+   
+int zanulqvaneChetniBitove(int n) {
+    return (n & 0xaaaaaaaa);
+}
+  
+int main() {
+   int n = 4;
+   printf("%d\n", zanulqvaneChetniBitove(n));
+   return 0;
+}

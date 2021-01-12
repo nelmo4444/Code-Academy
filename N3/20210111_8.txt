@@ -1,0 +1,22 @@
+#include <stdio.h> 
+
+int starBit (int number);
+  
+int main() {
+   int a = 1227133512;
+   printf("%d\n", starBit(a)); 
+   return 0; 
+} 
+
+
+int starBit(int number){
+    int bit = 31;
+    while (bit >= 0) {
+        if (number & 0x80000000) {
+            break;
+        }
+        number <<= 1;
+        bit--;
+    }
+    return bit;
+}

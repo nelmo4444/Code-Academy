@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int zanulqvane4do7(int n) {
+    return (n & 0xffffff0f);
+}
+  
+int main() {
+   int n = 3919;
+   printf("%d\n", zanulqvane4do7(n));
+   return 0;
+}

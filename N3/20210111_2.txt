@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int vzemiBitna(int a, int pos);
+
+int main(){
+    int a =4;
+    printf("%d",vzemiBitna(a,0));
+}
+
+int vzemiBitna(int a, int pos){
+    return (a >> pos) & 1;
+
+}

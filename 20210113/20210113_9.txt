@@ -9,5 +9,6 @@ int main(void){
     __mingw_printf("%.20Lf\n", b);
     __mingw_printf("%.2Lf\n", c);
     __mingw_printf("%.17Lf\n", d);
+    // Predpolagam ideqta e da preleqt.
     return 0;
 }

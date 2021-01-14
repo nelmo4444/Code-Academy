@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(void){
-    float a = 4.9876543;
+    double a = 4.9876543;
     long double b = 7.123456789012345678890;
     long double c = 18398458438583853.28;
     long double d = 18398458438583853.39875937284928422;
-    printf("%f\n", a);
-    __mingw_printf("%Lf\n", b);
-    __mingw_printf("%Lf\n", c);
-    __mingw_printf("%Lf\n", d);
+    printf("%.7lf\n", a);
+    __mingw_printf("%.20Lf\n", b);
+    __mingw_printf("%.2Lf\n", c);
+    __mingw_printf("%.17Lf\n", d);
     return 0;
 }

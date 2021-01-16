@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main(void){
+
+    unsigned char broiKaravani = 3;
+    float cenaKaravana = 90;
+    unsigned char broiKemperi = 3;
+    float cenaKemperi = 100;
+    float cenaObshta = 0;
+
+    printf("\nDobre doshli v Karavani i Kemperi pod naem\n");
+
+    char cProduljavam = 1;//Promenliva koqto pazi izbora na klienta, otnosno dali da produlji da pazaruva.
+
+    while(cProduljavam == 1){
+    printf("\nAko zelaete karavana natisnete 1\n");
+    printf("Ako zelaete kemper natisnete 2\n");
+    char rez;
+    scanf("%d", &rez);
+
+    if (rez==1){
+        if (broiKaravani==0){
+            printf("\nNqma poveche Karavani\n");
+            break;
+        }
+        cenaObshta += 90;
+        broiKaravani--;
+    }
+    if (rez==2){
+        if (broiKemperi==0){
+            printf("\nNqma poveche Kemperi\n");
+           break;
+        }
+        cenaObshta += 100;
+        broiKemperi--;
+    }
+
+    printf("\nNatisni 1 za naem na oshte stoki\nNatisni 0 za da krai na pazaruvaneto\n");
+    scanf("%d",&cProduljavam);
+    }
+
+    printf("\nDuljite ni:\n %.2f leva\n", cenaObshta);
+    
+    return 0;
+}

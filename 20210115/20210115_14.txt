@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int a = 4;
+void test();
+
+int main() {
+    test();
+    test();
+    test();
+    printf("a = %d\n",a);
+   return 0;
+}
+void test(){
+    a++;
+}

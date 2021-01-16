@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void stat();
+
+int main() {
+    stat();
+    stat();
+    stat();
+   return 0;
+}
+void stat(){
+static int a = 4;
+a++;
+printf("a = %d\n", a);
+}

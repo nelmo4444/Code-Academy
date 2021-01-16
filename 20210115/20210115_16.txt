@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+const double PI = 3.14159;
+double lice(double R);
+
+int main() {
+    lice(1);
+    lice(1.5);
+    lice(13);
+   return 0;
+}
+double lice(double R){
+printf("Lice = %f\n", PI*R*R);
+return PI*R*R;
+}

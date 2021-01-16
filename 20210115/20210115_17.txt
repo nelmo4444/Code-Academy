@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+const double Pi = 3.14159;
+double liceE(double A, double B);
+double liceO(double R);
+
+int main() {
+    liceO(1);
+    liceO(1.5);
+    liceO(13);
+   return 0;
+}
+double liceE(double A, double B){
+printf("Lice = %f\n", Pi*A*B);
+return Pi*A*B;
+}
+
+double liceO(double R){
+printf("Lice = %f\n", Pi*R*R);
+return Pi*R*R;
+}
